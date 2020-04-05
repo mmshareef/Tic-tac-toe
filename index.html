@@ -5,17 +5,24 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <! linking html file to .css file >
   <link rel="stylesheet" href="style.css">
   <title>Tic Tac Toe</title>
 </head>
 <body>
+  <! the grid, title , turn status all are in container class>
   <div class="container">
+    <! span is added here to be able to style tac in tittle with a different color>
     <h1 class="title">Tic <span>Tac</span> Toe</h1>
+    <!Status action is used to keep track of whoose turn it is to play>
     <div class="status-action">
       <div class="status">× is next</div>
+      <! restart - not a button. Event listener is used to listen for click. >
       <div class="restart">Restart</div>
     </div>
+    <!class game grid is for the 3*3 grid used in tic tac toe>
     <div class="game-grid">
+      <!class - game cell is used for each of the elements in the 3*3 grid. there are 9 game cell classes>
       <div class="game-cell"></div>
       <div class="game-cell"></div>
       <div class="game-cell"></div>
@@ -27,6 +34,7 @@
       <div class="game-cell"></div>
     </div>
   </div>
+  <!linking html file with the .js file >
   <script src="script.js"></script>
 </body>
 </html>
