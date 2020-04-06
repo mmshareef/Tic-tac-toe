@@ -5,7 +5,9 @@
   }
   
 body {
+  /*below is the color for text */
     color: rgb(71, 2, 54);
+    /*flex used to put everything in centre. justify-content is also for the same purpose */
     display: flex;
     font-family: sans-serif;
     justify-content: center;
@@ -15,7 +17,9 @@ body {
     background: rgb(230, 20, 167);
     margin: 50px;
     padding: 50px;
+     /*border radius is used to make the edges of the container round */
     border-radius: 25px;
+    /*size of container is defined by its children*/
   }
   
   .title {
@@ -25,30 +29,33 @@ body {
   .title span {
     color: #F2EBD3;
   }
-  
+/*status action is used to keep track of whoose turn it is */
   .status-action {
     display: flex;
     margin-top: 25px;
     font-size: 25px;
+    /*space around was used to keep a distance between x is next and restart*/
     justify-content: space-around;
     height: 30px;
   }
-  
+  /*span  */
   .status span {
     color: #F2EBD3;
   }
-  
+  /* restart not a button. when cursor is hover around  restart it changes to pointer */
   .restart {
     cursor: pointer;
   }
-  
+  /*restart changes to white color when cursor hovers arounf it*/
   .restart:hover {
     color: #F2EBD3;
   }
-  
+  /* game grid is the 3*3 grid of tic tac toe*/
   .game-grid {
+    /*below is color for grid lines*/
     background: rgb(71, 2, 54);
     display: grid;
+    /* repeat (3, 1 fr) is used to get 3 rows or colums at equally divide spaces */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 15px;
@@ -67,6 +74,7 @@ body {
   
   .x,
   .o {
+    /*if a cell is already filled with a vaule. the cursor should not appear as a pointer*/
     cursor: default;
   }
   
@@ -82,9 +90,10 @@ body {
   }
   
   .won::after {
+    /*styling of winning combination*/
     color: rgb(213, 226, 26);
   }
-  
+  /* media query is used to make a responsive design for tabs and smart phone size*/
   @media only screen and (max-width: 1024px) {
     .game-grid {
       margin-top: 25px;
