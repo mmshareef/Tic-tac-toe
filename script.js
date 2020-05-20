@@ -125,3 +125,4 @@ resetDiv.addEventListener('click', handleRestart);
 for (const cellDiv of cellDivs) {
   cellDiv.addEventListener('click', handleCellClick)
 }
+console.log(classList[1]);
